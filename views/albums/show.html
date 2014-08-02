@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>CapoeiraLyrics.info</title>
+		<title>CapoeiraLyrics.info | {{ album.title }}</title>
 
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./styles/capoeiralyrics.css">
+		<link rel="stylesheet" href="/styles/capoeiralyrics.css">
 
 
 	</head>
@@ -15,27 +15,13 @@
 		{% include '../includes/navbar.html' %}
 		
 		<div class="container">
-		<div class="row">
-			<div class="col-md-9">
-				<!-- songs list -->
-				<div class="table-responsive">
-					<table class="table table-hover">
-						{% for album in albums %}
-							{# <li{% if loop.first %} class="first"{% endif %}> #}
-							{% include './album-table-row.html' %}
-							</li>
-						{% endfor %}
-					</table>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<!-- sidebar -->
-			</div>
+			{{ album.id }}
 		</div>
 
-		</div>
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	</body>
 </html>
-

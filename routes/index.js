@@ -11,11 +11,4 @@ router.get('/', function(req, res, next) {
 });
 
 
-
-router.get('/albums', function(req, res) {
-  res.render('albums/index', { title: 'capoeiralyrics.info', activealbums:true});
-});
-
-
-
 module.exports = router;

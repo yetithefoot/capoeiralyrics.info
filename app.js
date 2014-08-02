@@ -34,6 +34,7 @@ app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/songs', require('./routes/songs'));
 app.use('/artists', require('./routes/artists'));
+app.use('/albums', require('./routes/albums'));
 
 
 /// errors

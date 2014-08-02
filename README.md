@@ -1,4 +1,7 @@
-## Capoeira Lyrics is an open source and public domain project!
+## Capoeira Lyrics is an open source project!
+
+[![Capoeira Lyrics](http://et-si.net/Blog/wp-content/gallery/capoeira-hd-13-14/encre_0482.jpg)](http://capoeiralyrics.info)
+
 
 **Interested in contributing? Help us:**
 
@@ -6,9 +9,6 @@
 - [Localize content](mailto:reg.yeti@gmail.com)
 - [Fix mistakes](mailto:reg.yeti@gmail.com)
 - [...or anything else](mailto:reg.yeti@gmail.com)
-
-
-[![Capoeira Lyrics](http://et-si.net/Blog/wp-content/gallery/capoeira-hd-13-14/encre_0482.jpg)](http://capoeiralyrics.info)
 
 *Images by Alex Illustrateur (http://et-si.net/)*
 *Capoeira Lyrics (http://capoeiralyrics.info)*

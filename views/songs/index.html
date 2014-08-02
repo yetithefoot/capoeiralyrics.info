@@ -7,13 +7,35 @@
 		<title>CapoeiraLyrics.info</title>
 
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./styles/capoeiralyrics.css">
+		<link rel="stylesheet" href="/styles/capoeiralyrics.css">
 
 
 	</head>
 	<body>
-		{% include 'includes/navbar.html' %}
+		{% include '../includes/navbar.html' %}
+		
+		<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<!-- songs list -->
+				<div class="table-responsive">
+					<table class="table table-hover">
+						{% for song in songs %}
+							{# <li{% if loop.first %} class="first"{% endif %}> #}
+							{% include './song-table-row.html' %}
+							</li>
+						{% endfor %}
+					</table>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<!-- sidebar -->
+			</div>
+		</div>
 
+
+
+		</div>
 
 
 

@@ -1,4 +1,4 @@
-exports.index = function(req, res, next){
+exports.index = function(req, res){
 	var songs = [];
 	for (var i = 0; i < 1000; i++) {
 		songs.push(
@@ -11,7 +11,7 @@ exports.index = function(req, res, next){
 	res.render('songs/index', { activesongs:true, songs:songs });
 }
 
-exports.show = function(req, res, next){
+exports.show = function(req, res){
 
 	res.render('songs/show', { activesongs:true, song: {id:req.params.id}});
 }

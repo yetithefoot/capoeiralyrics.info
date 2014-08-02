@@ -1,17 +1,17 @@
 exports.index = function(req, res, next){
-	var songs = [];
+	var artists = [];
 	for (var i = 0; i < 1000; i++) {
-		songs.push(
+		artists.push(
 			{
 				id:i, 
-				title:('Song'+i)
+				title:('Artist'+i)
 			});
 	};
 
-	res.render('artists/index', { activesongs:true, songs:songs });
+	res.render('artists/index', { activeartists:true, artists:artists });
 }
 
 exports.show = function(req, res, next){
 
-	res.render('artists/show', { activesongs:true, song: {id:req.params.id}});
+	res.render('artists/show', { activeartists:true, artist: {id:req.params.id}});
 }

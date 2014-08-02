@@ -28,18 +28,16 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var songs = require('./routes/songs');
-app.use('/', routes);
-app.use('/users', users);
-app.use('/songs', songs);
-
+// setup routes for resources
+// NOTE: not sure we can use express-resource with Express 4
+app.use('/', require('./routes/index'));
+app.use('/users', require('./routes/users'));
+app.use('/songs', require('./routes/songs'));
+app.use('/artists', require('./routes/artists'));
 
 
-
-/// catch 404 and forward to error handler
+/// errors
+// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     console.log(err)
     console.log(err.stack)
@@ -48,12 +46,9 @@ app.use(function(req, res, next) {
     next(err);
 });
 
-/// error handlers
 
-// development error handler
-// will print stacktrace
-// production error handler
-// no stacktraces leaked to user
+// development environment error handler will print stacktrace
+// production environment error handler no stacktraces leaked to user
 app.use(function(err, req, res, next) {
     console.log(err)
     console.log(err.stack)

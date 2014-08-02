@@ -1,6 +1,6 @@
 ## Capoeira Lyrics is an open source project!
 
-[![Capoeira Lyrics](http://et-si.net/Blog/wp-content/gallery/capoeira-hd-13-14/encre_0482.jpg)](http://capoeiralyrics.info)
+[![Capoeira Lyrics](https://raw.githubusercontent.com/yetithefoot/capoeiralyrics.info/master/public/images/encre_0482.jpg)](http://capoeiralyrics.info)
 
 
 **Interested in contributing? Help us:**

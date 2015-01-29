@@ -4,7 +4,7 @@ exports.index = function(req, res, next){
 		albums.push(
 			{
 				id:i, 
-				title:('Album'+i)
+				title:('Album '+i)
 			});
 	};
 

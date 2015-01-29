@@ -5,7 +5,7 @@ exports.index = function(req, res, next){
 			{
 				id:i, 
 				title:('Album title'+i)
-			});
+			})
 	};
 
 	res.render('albums/index', { activealbums:true, albums:albums });

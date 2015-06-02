@@ -2,10 +2,10 @@
 // var debug = require('debug')('capoeiralyrics.info');
 var app = require('../app');
 
-app.set('port', process.env.PORT || 8008);
+app.set('port', process.env.PORT || 4000);
 
 var server = app.listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + server.address().port);
+  console.log('Capoeiralyrics server listening on port ' + server.address().port);
 });
 
 process.on('uncaughtException', function(err) {

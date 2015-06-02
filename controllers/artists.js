@@ -1,17 +1,18 @@
-exports.index = function(req, res, next){
-	var artists = [];
-	for (var i = 0; i < 1000; i++) {
-		artists.push(
-			{
-				id:i, 
-				title:('Artist'+i)
-			});
-	};
+var slug = require('slug');
 
-	res.render('artists/index', { activeartists:true, artists:artists });
+exports.index = function(req, res){
+
+	Artist.find({}, function(err, artists){
+		artists = artists.sort();
+		res.render('artists/index', { activeartists:true, artists:artists });
+	})
 }
 
-exports.show = function(req, res, next){
+exports.show = function(req, res){
 
-	res.render('artists/show', { activeartists:true, artist: {id:req.params.id}});
+	Artist.findOne({slug:req.params.slug}, function(err, artist){
+		res.render('artists/show', { activeartists:true, artist:artist });
+	})
+
+
 }

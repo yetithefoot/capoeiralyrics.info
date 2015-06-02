@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var songs = require('../controllers/songs.js');
+var songs = require('../controllers/songs');
 
 
 router.get('/', function(req, res, next) {

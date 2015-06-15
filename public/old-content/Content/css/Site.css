@@ -1,0 +1,110 @@
+﻿
+
+
+/* ------------------tags cloud---------------- */
+.TagCloud
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+
+.label-tag {
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    /*color: #2071a1;*/
+    color: #3A87AD;
+    background-color: #D9EDF7;
+    border-color: #BCE8F1;
+    text-shadow: none;
+    padding: 1px 4px 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.label-tag:hover {
+  color: #3A87AD;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ------------------row icons ---------------- */
+.row_indicator_icon
+{
+    margin: 0px 0px 0px 5px;
+    width: 14px;
+}
+
+/* -----------------twitter widget ---------------- */
+
+.twitter_block
+{
+    margin-top: 20px;
+    float: right;
+}
+
+.twtr-ft
+{
+    display:none;
+}
+
+.twtr-doc a
+{
+    text-decoration:underline!important;
+}
+
+.song_in_list, a:link.song_in_list, a:visited.song_in_list
+{
+    font-weight:bold;
+    text-transform:capitalize;
+}
+
+.alert {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.call-to-action 
+{
+    background-color: rgb(48, 138, 48);
+    height: 42px;
+}
+
+.knobscontainer
+{
+    margin-bottom:5px;
+
+} 
+
+.knobcontainer
+{
+    display:inline-block;
+    margin-left:40px;
+    margin-right:40px;
+}   
+            
+.knob{
+    background-color: transparent!important;
+    box-shadow: inset 0 0 0 0 transparent!important;
+    -webkit-box-shadow: inset 0 0 0 0 transparent!important;
+    cursor:auto!important;
+    margin-bottom:10px!important;
+}
+        
+.knob > h3
+{
+    color:#3f9fd9;
+}
+
+
+.btn {
+    background-image: none;
+}
